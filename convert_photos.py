@@ -27,7 +27,7 @@ for p in sorted(filepath.walk()):
     try:
         im = plt.imread(p)
     except:
-        print(f"{im} cannot be read as an image.")
+        print(f"{p} cannot be read as an image.")
         continue
 
     h, w, layers = im.shape
