@@ -18,6 +18,8 @@ for p in sorted(filepath.walk()):
     if p.isdir(): continue
 
     pout = Path(p.replace(filepath, filepathout))
+    os.makedirs(pout.dirname(), exist_ok=True)
+    
     if p.splitext()[0].endswith("--converted"):
         shutil.copy(p, pout)
         continue
