@@ -5,6 +5,7 @@ Application:
     name        : Streicher Foto Album Converter
     asciibanner : tools/deploy-scripts/assets/asciibanner-AA.txt
     installdir  : '%localappdata%\autoactuary\Streicher Foto Album Converter'
+    icon        : tools/deploy-scripts/assets/autoactuary.ico
 
     #After installation
     pause: 1
