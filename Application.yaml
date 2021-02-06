@@ -1,0 +1,28 @@
+#Bespon config file: https://bespon.org/
+             
+#information for application name and launcher
+Application:
+    name        : Streicher Foto Album Converter
+    asciibanner : tools/deploy-scripts/assets/asciibanner-AA.txt
+    installdir  : '%localappdata%\autoactuary\Streicher Foto Album Converter'
+
+    #After installation
+    pause: 1
+
+    # map "from/path/" -> "to/path"
+    programdata: 
+        - [./bin,  ./bin]
+        - [./src,  ./src]
+
+    #These are shortcuts from %localappdata%/foo/bar to start-menu
+    startmenu: 
+        - src/Streicher Foto Album Converter.exe
+
+#Download Python/R (optional) and their dependancies to be deployed
+Dependencies:
+    deploy-scripts: master
+    python:
+      - tk
+      - numpy
+      - Pillow
+      - matplotlib

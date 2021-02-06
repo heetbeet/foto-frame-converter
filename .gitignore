@@ -1,1 +1,4 @@
 ./examples_converted
+bin
+src
+tools
